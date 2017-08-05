@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	<title>object constructor</title>
+	</head>
+    <body>
+      <p id="demo"></p>
+    <script>                                                                          /*creating an employee object constructor*/
+       function emp(user, skills, salary) {
+       this.user = user;
+       this.skills = skills;
+       this.salary = salary;
+       }
+
+       var ab = new emp("John", "c", 50,000, );
+       var ac = new emp("Sally", "java", 48,000,);                                      /*printing the details*/
+   
+       document.getElementById("demo").innerHTML =      
+
+	   "ab-user- " + ab.user + "<br>" + "ab-skills- " + ab.skills + "<br>" +  "ab-salary-" + ab.salary + "<br>" + "<br>" +
+	   "ac-user- " + ac.user + "<br>" + "ac-skills- " + ac.skills + "<br>" +  "ac-salary-" + ac.salary ; 
+		
+    </script>
+    </body>
+</html>

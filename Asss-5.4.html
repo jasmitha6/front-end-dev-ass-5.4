@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html>
+	<head>
+	<title>object constructor</title>
+	</head>
+    <body>
+      <p id="demo"></p>
+    <script>                                                                          /*updating an  employee object constructor*/
+       function emp(user, skills, salary) {
+       this.user = user;
+       this.skills = skills;
+       this.salary = salary;
+	   this.changesalary = function (salary) {
+        this.salary = salary;
+       }
+	   }
+
+       var ab = new emp("John", "c", 50,000, );
+       var ac = new emp("Sally", "java", 48,000,);                                      
+       var ac = new emp("Sally","java",48,000,);                                     /*printing the  updated salary*/
+       ac.changesalary("20,000");
+      document.getElementById("demo").innerHTML =
+      "ac-salary-" + ac.salary;	
+    </script>
+   </body>
+</html>
